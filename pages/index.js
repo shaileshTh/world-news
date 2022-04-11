@@ -3,15 +3,15 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  useEffect(() => {
-    setLoading(true)
-    fetch('api/profile-data')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data)
-        setLoading(false)
-      })
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   fetch('api/profile-data')
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setData(data)
+  //       setLoading(false)
+  //     })
+  // }, [])
   
   return (
     <div className={styles.container}>
